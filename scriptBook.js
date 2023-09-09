@@ -27,11 +27,11 @@ function addBook(title, author, numberOfPages) {
     bookElement.classList.add("book");
 
     let bookTitle = document.createElement("h4");
-    bookTitle.innerText = book.title.toString();
+    bookTitle.innerText = '"' + book.title + '"';
     let bookAuthor = document.createElement("p");
-    bookAuthor.innerText = book.author.toString();
+    bookAuthor.innerText = book.author;
     let bookPages = document.createElement("p");
-    bookPages.innerText = book.numberOfPages.toString();
+    bookPages.innerText = book.numberOfPages;
 
     bookElement.appendChild(bookTitle);
     bookElement.appendChild(bookAuthor);
@@ -43,7 +43,7 @@ function addBook(title, author, numberOfPages) {
 let bookSubmitForm = document.getElementById("book-submit-form");
 bookSubmitForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    let bookTitle = '"' + document.getElementById("title-input").value + '"';
+    let bookTitle = document.getElementById("title-input").value;
     let author = document.getElementById("author-input").value;
     let numberOfPages = document.getElementById("number-of-pages-input").value;
     if (!bookTitle || !author || !numberOfPages) {
