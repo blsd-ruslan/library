@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+    <link rel="icon" href="icons/library.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="scriptBook.js" defer></script>
+</head>
+<body>
+    <div class="general-container">
+        <div class="header-container">
+            <div class="header-title">
+                <span class="header-title-icon">
+                    <img src="icons/library.png" alt="bookshelf icon" style="width: 2rem; height: 2rem;">
+                </span>
+                library
+            </div>
+
+            <div class="login-info">John Doe john.doe@example.com</div>
+        </div>
+        <div class="content-container">
+            <div class="sub-container" id="tools">
+                <h5>Tools</h5>
+                <button class="tools-button" id="settings-button">Settings</button>
+            </div>
+            <div class="sub-container" id="book-form-container">
+                <h5>New Book</h5>
+                <form class="book-form" id="book-submit-form">
+                    <label class="book-form-label" for="title-input">
+                        <span class="label-text">Title</span>
+                        <input id="title-input">
+                    </label>
+                    <label class="book-form-label" for="author-input">
+                        <span class="label-text">Author</span>
+                        <input id="author-input">
+                    </label>
+                    <label class="book-form-label" for="number-of-pages-input">
+                        <span class="label-text">Number Of Pages</span>
+                        <input type="number" id="number-of-pages-input">
+                    </label>
+                    <button class="tools-button" type="submit" id="submit-book">Submit</button>
+                </form>
+            </div>
+            <div class="library-container">
+                <div class="book">
+                    <h4 class="book-title">"1984"</h4>
+                    <p class="book-author">by G. Orwell</p>
+                    <p class="book-number-of-pages">541 pages</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            Copyright © 2023 blsd-ruslan
+        </div>
+    </div>
+</body>
+</html>
